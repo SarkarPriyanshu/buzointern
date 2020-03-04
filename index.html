@@ -1,0 +1,175 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width" />
+    <!-- Bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <!--index stylesheet link -->
+    <link rel="stylesheet" href="/css/index.css" />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font-awesome link -->
+    <link rel="stylesheet" href="/css/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <div
+      class="container-fluid d-flex flex-column justify-content-center align-items-center p-5"
+    >
+      <!-- Wrapper Div -->
+      <div class="wrapper-div col-12 col-md-6 row p-4">
+        <div class="Contact-us col-12 col-lg-5 shadow-lg">
+          <h4 class="p-2 text-light">Contact Us</h4>
+
+          <section
+            class="d-flex flex-column justify-content-between align-items-start "
+          >
+            <!-- Address -->
+            <span
+              class="d-flex flex-row justify-content-center align-items-center my-1"
+            >
+              <i class="fas fa-map-marker-alt"></i>
+              <address class="px-2">
+                <small> 23,Avenue de Paris 75012 Paris</small>
+              </address>
+            </span>
+            <!-- Address -->
+            <!-- Mail -->
+            <span
+              class="d-flex flex-row justify-content-between align-items-center my-2"
+            >
+              <i class="far fa-envelope"></i>
+              <small class="px-2">hello@mikechemardin.com</small>
+            </span>
+            <!-- Mail -->
+            <!-- skype -->
+            <span
+              class="d-flex flex-row justify-content-between align-items-center my-2"
+            >
+              <i class="fab fa-skype"></i>
+              <small class="px-2">mike.chemardin</small>
+            </span>
+            <!-- skype -->
+            <!-- call -->
+            <span
+              class="d-flex flex-row justify-content-between align-items-center my-2"
+            >
+              <i class="fas fa-mobile-alt"></i>
+              <small class="px-2">123-456-7897</small>
+            </span>
+            <!-- call -->
+            <div
+              class="d-flex flex-row justify-content-between align-items-center my-3 my-md-5"
+            >
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </section>
+        </div>
+        <div class="col-12 col-md-7 ml-0 ml-md-4 my-5 my-md-0 p-0 p-md-3">
+          <span class="text-center text-md-left my-2">
+            <h4>Get in Touch</h4>
+            <p class="text-muted">Feel free to drop us a line below!</p>
+          </span>
+          <!-- Form -->
+          <form
+            class="form form-group d-flex flex-column justify-content-between align-items-center align-items-md-start"
+            action="#" 
+          >
+            <!-- Name Input -->
+            <label for="name" aria-labelledby="name">
+              <input
+                class="form-control"
+                id="name"
+                type="text"
+                placeholder="Your name"
+                aria-describedby="name"
+                autocomplete="off"
+              />
+              <label
+                class="d-none errorNameMessage"
+                for="errorNameMessage"
+                aria-labelledby="errorNameMessage"
+                ><small>Please enter valid name</small></label
+              >
+            </label>
+            <!-- Name Input End -->
+            <!-- Email input -->
+            <label for="email" aria-labelledby="email">
+              <input
+                class="form-control"
+                id="email"
+                type="email"
+                placeholder="Your email"
+                aria-describedby="email"
+                autocomplete="off"
+              />
+              <label
+                class="d-none errorEmailMessage"
+                for="errorEmailMessage"
+                aria-labelledby="errorEmailMessage"
+                ><small>Please enter valid name</small></label
+              >
+            </label>
+            </label>
+            <!-- Email input End -->
+            <!-- Textarea -->
+            <label for="textarea" aria-labelledby="textarea">
+              <textarea
+                class="form-control text-muted"
+                name="textarea"
+                id="textarea"
+                placeholder="Type your message here."
+                rows="5"
+                autocomplete="off"
+              ></textarea>
+            </label>
+            <!-- Textarea End -->
+            <!-- google Recaptcha -->
+            <div class="form-group d-none">
+              <div
+                class="g-recaptcha"
+                data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S"
+                data-callback="verifyRecaptchaCallback"
+                data-expired-callback="expiredRecaptchaCallback"
+              ></div>
+              <input
+                class="form-control d-none"
+                data-recaptcha="true"
+                required
+                data-error="Please complete the Captcha"
+              />
+              <div class="help-block with-errors"></div>
+              <!-- google Recaptcha End -->
+            </div>
+            <button class="btn shadow">SEND</button>
+          </form>
+          <!-- Form End -->
+        </div>
+      </div>
+      <!-- Wrapper Div End-->
+      <div class="">
+        <!-- Google Map -->
+        <div id="googleMap"></div>
+        <!-- Google Map End -->
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx8zV8irZ44hICJgefeSaCiIrTWs6zmHY&callback=myMap"></script>
+  </body>
+</html>
